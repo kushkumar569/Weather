@@ -1,0 +1,177 @@
+.header{
+    text-align: center;
+    margin: 50px;
+}
+.new_delhi,#patna,#kolkata,#jammu,#sasaram,#bangalore{
+    width: 180px;
+    height: 50px;
+    display: inline-block;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    gap: 20px;
+    background-color:rgba(134, 174, 230, 0.997);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1.5px 1.5px rgb(134, 161, 242);
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    opacity: 0.4;
+}
+
+.city{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+body{
+    background-image:linear-gradient(to bottom,rgba(168, 197, 231, 0.997),rgba(73, 42, 186, 0.767),rgb(36, 34, 34));
+    background-size: cover;
+    margin: 0px;
+}
+#btm{
+    box-shadow: 3px 3px rgb(134, 161, 242);
+    border: 2px solid white;
+    background-image: url("./search\ 1.jpg");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    box-sizing: border-box; 
+    width: 60%;
+    /* background-color: #fff; */
+    font-size: 20px;
+    border-radius: 20px;
+    /* padding: 10px; */
+    transition: width 0.4s ease-in-out;
+}
+#search{
+    border: 2px solid #fff;
+    /* color: black; */
+    font-size: 16px;
+    /* padding: 12px 10px 12px 40px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 91%;
+    /* top: 20px; */
+    border-radius: 10px;
+}
+#result{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(244, 243, 248);
+    font-family: 'Courier New', Courier, monospace;
+}
+#main{
+    height: 400px;
+    width: 600px;
+}
+
+#poster{
+    position: relative;
+    height: 355px;
+    width: 40%;
+    background-image: url("./blurry.jpg");
+    background-size: cover;
+    /* background-image: linear-gradient(45deg,rgba(31, 41, 86, 0.801),rgba(61, 27, 181, 0.767),rgb(118, 167, 226)); */
+    background-size: cover;
+    /* text-align: center; */
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#inner{
+    background-image: url("./blurry.jpg");
+    background-size: cover;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 10%;
+    height: 80%;
+    width: 80%;
+    background-color: rgba(109, 109, 146, 0.642);
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.main_box{
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.8;
+    background-color: rgb(109, 109, 146, 0.642109, 109, 146, 0.642);
+    height: 60%;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.box{
+    margin-left: 5px;
+    opacity: 0.8;
+    display: inline-block;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    /* gap: 5px; */
+    background-color: rgb(109, 109, 146, 0.642109, 109, 146, 0.642);
+    height: 32%;
+    width: 23%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+#w_img,#temp,#sunny{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    background-color: rgb(109, 109, 146, 0.642109, 109, 146, 0.642);
+    font-size: 20px;
+}
+#w_img{
+
+    height: 100px;
+    width: 80px;
+}
+#temp{
+    height: 100px;
+    width: 80px;
+}
+#sunny{
+    height: 100px;
+    width: 150px;
+}
+
+footer{
+    text-align: center;
+    background-color: #13164100;
+    height: 96px;
+    width: 100%;
+}
+
+#footer_before{
+    height: 0.5px;
+    width: 100%;
+    background-color: #ffffff6c;
+}
+#instagram,#twitter,#linkedin,#github{
+    margin-top: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+    background: none;
+    color: #ffffffbb;
+}
+.last{
+    /* text-align: end; */
+    margin-top: 20px;
+    color: #ffffffbb;
+}
+
+
+
