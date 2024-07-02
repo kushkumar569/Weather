@@ -26,11 +26,18 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=29e4d42b777d459cac61129452
         document.getElementById("wind").innerHTML = `<p> Wind</p>\n${data.current.wind_kph} km/h`;
         document.getElementById("humidity").innerHTML = `<p> Humidity</p>\n${data.current.humidity}%`;
         document.getElementById("dew").innerHTML = `<p> Dew Point</p>\n${data.current.dewpoint_c}°`;
-        const temp = data.current.temp_c;
-        const hum = data.current.humidity;
-        const day = data.current.condition.text;
     })
-    .catch((error) => document.getElementById("feel").innerHTML = `\nError`)
+    .catch((error) => {
+        document.getElementById("time").innerHTML = `Error, Invalid Location.`
+        document.getElementById("w_img").innerHTML = ``
+        document.getElementById("temp").innerHTML = ``
+        document.getElementById("day").innerHTML = ``
+        document.getElementById("feel").innerHTML = ``
+        document.getElementById("air").innerHTML = ``
+        document.getElementById("wind").innerHTML = ``
+        document.getElementById("humidity").innerHTML = ``
+        document.getElementById("dew").innerHTML = ``
+    })
 
 
 const submit = document.getElementById("btm");
@@ -53,13 +60,18 @@ submit.addEventListener('click', function (e) {
             document.getElementById("wind").innerHTML = `<p> Wind</p>\n${data.current.wind_kph} km/h`;
             document.getElementById("humidity").innerHTML = `<p> Humidity</p>\n${data.current.humidity}%`;
             document.getElementById("dew").innerHTML = `<p> Dew Point</p>\n${data.current.dewpoint_c}°`;
-            const temp = data.current.temp_c;
-            const hum = data.current.humidity;
-            const day = data.current.condition.text;
-
-
         })
-        .catch((error) => document.getElementById("feel").innerHTML = `Error`)
+        .catch((error) => {
+            document.getElementById("time").innerHTML = `Error, Invalid Location.`
+            document.getElementById("w_img").innerHTML = ``
+            document.getElementById("temp").innerHTML = ``
+            document.getElementById("day").innerHTML = ``
+            document.getElementById("feel").innerHTML = ``
+            document.getElementById("air").innerHTML = ``
+            document.getElementById("wind").innerHTML = ``
+            document.getElementById("humidity").innerHTML = ``
+            document.getElementById("dew").innerHTML = ``
+        })
 });
 
 const instagram = document.getElementById('instagram');
