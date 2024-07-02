@@ -16,7 +16,6 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=29e4d42b777d459cac61129452
     .then((response) => {
         return response.json()
     })
-    .catch((error) => document.getElementById("feel").innerHTML = `Error`)
     .then((data) => {
         document.getElementById("time").innerHTML = `${data.location.localtime}`;
         document.getElementById("w_img").innerHTML = `<span style="font-size:50px;">⛅</span>`;
@@ -31,6 +30,7 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=29e4d42b777d459cac61129452
         const hum = data.current.humidity;
         const day = data.current.condition.text;
     })
+    .catch((error) => document.getElementById("feel").innerHTML = `\nError`)
 
 
 const submit = document.getElementById("btm");
